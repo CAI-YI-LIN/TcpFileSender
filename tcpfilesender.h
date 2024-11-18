@@ -20,7 +20,7 @@ public slots:
     void openFile();
 
 private:
-    // 控件
+    
     QProgressBar     *clientProgressBar;
     QLabel           *clientStatusLabel;
     QPushButton      *startButton;
@@ -29,11 +29,11 @@ private:
     QDialogButtonBox *buttonBox;
     QTcpSocket       tcpClient;
 
-    // 新增控件：用来输入 IP 和端口
-    QLineEdit        *ipLineEdit;       // IP 地址输入框
-    QLineEdit        *portLineEdit;     // 端口号输入框
+    
+    QLineEdit        *ipLineEdit;       
+    QLineEdit        *portLineEdit;     
 
-    // 文件传输相关变量
+    
     qint64           totalBytes;
     qint64           bytesWritten;
     qint64           bytesToWrite;
